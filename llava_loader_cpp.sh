@@ -13,7 +13,8 @@ cmake ..
 cmake --build . --config Release
 cd ..
 
-# Use Llava-cli, pass the model, proj file and image, you can use -p command line argument to pass the prompt, by default describe the image prompt is executed on the passed image
+# Use Llava-cli, pass the model, proj file and image, you can use -p command line argument to pass the prompt, by default "Describe the image in detail." prompt is executed on the passed image,
+# Temperature can be set with --temp params
 build/bin/llava-cli -m ggml-model-q5_k.gguf --mmproj mmproj-model-f16.gguf --image sample_image.png
 
 
